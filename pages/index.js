@@ -4,7 +4,7 @@ import { getDatabase } from "../lib/notion";
 import { Text } from "./[id].js";
 import styles from "./index.module.css";
 
-export const databaseId = process.env.NOTION_DATABASE_ID;
+export const databaseId = process.env.NOTION_DB_ID;
 
 export default function Home({ posts }) {
   return (
@@ -87,5 +87,15 @@ export default function Home({ posts }) {
   );
 }
 
-//SSGを追加
+//ISRを追加
+export const getStaticProps = async () => {
+  const database = await getDatabase(databaseId)
+
+  return  {
+    props: {
+      posts: database,
+    },
+    revalidate: 1,
+  }
+}
 

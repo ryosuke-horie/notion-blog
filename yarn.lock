@@ -368,10 +368,10 @@
   dependencies:
     "@napi-rs/triples" "^1.0.3"
 
-"@notionhq/client@^0.4.4":
-  version "0.4.4"
-  resolved "https://registry.npmjs.org/@notionhq/client/-/client-0.4.4.tgz"
-  integrity sha512-Gi07yVgEReImvM9y9rYpcOoPr7d6EFYXjy3KwM29ftu7WIaUNMPErPTlaSTFb0H0GX93EQjDC3kpol7WMupY7Q==
+"@notionhq/client@^0.4.13":
+  version "0.4.13"
+  resolved "https://registry.npmjs.org/@notionhq/client/-/client-0.4.13.tgz"
+  integrity sha512-tHC95h4JZYteHmIL49xdta0Yb9q0peXySqo9cqTQEVzpPwUdcPNgWQljMqfrSVKqlpGNX+DhXztY0LR6f3Iw6A==
   dependencies:
     "@types/node-fetch" "^2.5.10"
     node-fetch "^2.6.1"
